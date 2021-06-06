@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+{% block start_block %}
+    <form method="post">{% csrf_token %} 
+        <p>Are you sure you want to delete "{{ company.name }}"?</p> 
+        <input type="submit" value="Confirm" class="btn btn-danger"> 
+        <a href="/" class="btn btn-success">cancel</a>
+    </form>
+    {% endblock %}

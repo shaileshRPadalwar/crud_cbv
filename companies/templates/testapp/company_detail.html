@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+{% block start_block %}
+
+<ul>
+    <li>company Name : {{company.name}}</li>
+     <li>location : {{company.location}}</li>
+     <li>ceo :  {{company.ceo}}</li>
+     <hr>
+</ul> 
+<a href="/" class='btn btn-link'>HOME</a>
+{% endblock %}
+
